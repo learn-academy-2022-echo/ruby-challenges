@@ -59,4 +59,4 @@ tv_shows.reverse
 # Create a new empty array for your top favorite TV shows
 tv = []
 # From the full TV show array, add your top two favorite shows to the empty array
-tv_shows << tv
+ tv<< tv_shows
