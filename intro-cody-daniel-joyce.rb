@@ -52,14 +52,29 @@ p my_favorite_number
 
 # 🧵 Strings Challenges
 # Create a variable and return it in a sentence string interpolation
+
+my_name = 'Thor'
+p "Hello my name is #{my_name}"
+
 # Create a variable that contains a string and test some of the Ruby string methods
+
+string_test = 'ruby is fun'
+
 # .upcase
+p string_test.upcase
 # .reverse
+p string_test.reverse
 # .include?
+p string_test.include?('s')
 # .capitalize
+p string_test.capitalize
 # .delete
+p string_test.delete('i')
 # .index
+p string_test.index('y')
 # .swapcase
+string_test = 'RuBy Is FuN'
+p string_test.swapcase
 # [] Arrays Challenges
 # Create an array that contains the name of at least five TV shows
 # Find the length of the array
