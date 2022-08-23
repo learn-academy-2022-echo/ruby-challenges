@@ -77,9 +77,33 @@ string_test = 'RuBy Is FuN'
 p string_test.swapcase
 # [] Arrays Challenges
 # Create an array that contains the name of at least five TV shows
+
+tv_shows = ['Everybody Loves Raymond', 'Friends', 'Game of Thrones', 'The Office', 'The Simpsons']
+
 # Find the length of the array
+
+p tv_shows.length
+
 # Return the first item in the array
+
+p tv_shows.first
+
 # Return the fourth item in the array
+
+p tv_shows[3]
+
 # Permanently reverse the order of the array
+
+p tv_shows.reverse!
+p tv_shows
+
 # Create a new empty array for your top favorite TV shows
+
+new_empty_arr = []
+
+p new_empty_arr
+
 # From the full TV show array, add your top two favorite shows to the empty array
+
+new_empty_arr << 'The Office' << 'Everybody Loves Raymond'
+p new_empty_arr
