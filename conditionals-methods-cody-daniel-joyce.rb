@@ -38,14 +38,116 @@ is_pal 'racecar'
 is_pal 'level'
 is_pal 'macaroni'
 is_pal 'nurses run'
+
+
 # ✂️ Challenge: Rock, Paper, Scissors
+
 # As the first user, I can see a prompt in the terminal to enter my name.
+
+# p "Please enter player one's name" 
+# player_one = gets.chomp
+ 
+
 # As the second user, I can see a prompt in the terminal to enter my name.
+
+# p "Please enter player two's name"
+# player_two = gets.chomp
+
+
+
 # As the first user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
+
+
+# p "#{player_one} choose rock, paper, or scissors"
+# players_one_choice = gets.chomp
+
 # As the second user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
+
+# p "#{player_two} choose rock, paper, or scissors"
+# players_two_choice = gets.chomp
+
+
 # As a user, I can see a message in the terminal depicting which user won the round.
+
+# def rpc 
+#     p "Please enter player one's name" 
+#     player_one = gets.chomp
+#     p "Please enter player two's name"
+#     player_two = gets.chomp
+#         p "#{player_one} choose rock, paper, or scissors"
+#         players_one_choice = gets.chomp
+#         p "#{player_two} choose rock, paper, or scissors"
+#         players_two_choice = gets.chomp
+    
+    
+
+#     if players_one_choice == 'rock'
+#          if players_two_choice == 'scissors'
+#             p "#{player_one} wins"
+#          else
+#             p "#{player_two} wins"
+#     end
+#     if players_one_choice == 'paper'
+#         if players_two_choice == 'rock'
+#             p "#{player_one} wins"
+#          else
+#             p "#{player_two} wins"
+#     end
+#     if players_one_choice == 'scissors'
+#         if players_two_choice == 'paper'
+#             p "#{player_one} wins"
+#          else
+#             p "#{player_two} wins"
+#     end
+# end
+# end
+# end
+# end
+
+# rpc
+
 # As a user, I can see a message in the terminal noting if there was a tie.
+
+def rpc 
+    p "Please enter player one's name" 
+    player_one = gets.chomp
+    p "Please enter player two's name"
+    player_two = gets.chomp
+        p "#{player_one} choose rock, paper, or scissors"
+        players_one_choice = gets.chomp
+        p "#{player_two} choose rock, paper, or scissors"
+        players_two_choice = gets.chomp
+    
+    if players_one_choice == players_two_choice
+        p 'The game is tied, try again' 
+    elsif players_one_choice == 'rock'
+         if players_two_choice == 'scissors'
+            p "#{player_one} wins"
+         else
+            p "#{player_two} wins"
+    end
+    if players_one_choice == 'paper'
+        if players_two_choice == 'rock'
+            p "#{player_one} wins"
+         else
+            p "#{player_two} wins"
+    end
+    if players_one_choice == 'scissors'
+        if players_two_choice == 'paper'
+            p "#{player_one} wins"
+         else
+            p "#{player_two} wins"
+    end
+end
+end
+end
+end
+
+rpc
+
+
 # ✅ Challenge: Password Checker
+
 # As a developer, you have been tasked with creating the user registration for a secure web site. To test your code, enter the user ID and password in the terminal to find out if they are acceptable. The user ID and password must adhere to the to following criteria:
 
 # User ID and password cannot be the same.
