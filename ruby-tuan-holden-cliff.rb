@@ -46,9 +46,22 @@ p my_variable.swapcase
 
 
 # Create an array that contains the name of at least five TV shows
+tv_shows = ["BayWatch", "ManShow", "Ted Lasso", "Man vs Wild", "Stranger Things"]
 # Find the length of the array
+p tv_shows.length
 # Return the first item in the array
+p tv_shows.first
 # Return the fourth item in the array
+p tv_shows[3]
 # Permanently reverse the order of the array
+# p tv_shows = tv_shows.reverse
+# p tv_shows
+# p tv_shows.reverse!
+# p tv_shows
 # Create a new empty array for your top favorite TV shows
+top_fav_tv_shows =[]
 # From the full TV show array, add your top two favorite shows to the empty array
+top_fav_tv_shows << "ManShow"
+p top_fav_tv_shows
+top_fav_tv_shows << tv_shows[0]
+p top_fav_tv_shows
