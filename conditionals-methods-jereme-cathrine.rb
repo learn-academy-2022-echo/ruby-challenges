@@ -42,3 +42,43 @@ end
 p palindrome("tacocat")
 p palindrome("cloud")
 
+# ✂️ Challenge: Rock, Paper, Scissors
+
+# As the first user, I can see a prompt in the terminal to enter my name.
+# first_name=gets.chomp
+    # p first_name
+
+# As the second user, I can see a prompt in the terminal to enter my name.
+# second_name = gets.chomp
+    # p second_name
+
+# As the first user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
+
+p 'rock, paper, or scissors'
+first_choices = gets.chomp
+p first_choices 
+
+# As the second user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
+
+p 'rock, paper, or scissors'
+second_choices = gets.chomp
+p second_choices 
+
+# As a user, I can see a message in the terminal depicting which user won the round.
+
+def game (first_choices, second_choices ) 
+        if first_choices == second_choices
+            "Its a Draw"
+        elsif first_choices == "rock" && second_choices == "paper" || first_choices == "scissors" && second_choices == "rock" || first_choices == "paper" && second_choices == "scissors"
+            "Player 2 WINS"
+        elsif first_choices == "paper" && second_choices == "rock" || first_choices == "rock" && second_choices == "scissors" || first_choices == "scissors" && second_choices == "paper"
+            "Player 1 WINS"
+        else
+            "Try Again"
+        end
+end    
+
+p gam
+
+
+# As a user, I can see a message in the terminal noting if there was a tie.
