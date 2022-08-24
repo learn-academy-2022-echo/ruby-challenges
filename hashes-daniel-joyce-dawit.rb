@@ -40,7 +40,43 @@ p my_phone
     # output: {:app_three=>"Instagram", :app_four=>"Slack", :app_five=>"Discord", :new_app_one=>"Google Maps", :new_app_two=>"Clubhouse"}   
      
 # As a developer, I can delete two key:value pairs from my_phone.
+
+my_phone.delete(:app_three)
+my_phone.delete(:app_four)
+
+p my_phone
+
+    # output: {:app_five=>"Discord", :new_app_one=>"Google Maps", :new_app_two=>"Clubhouse"}
+
 # As a developer, I can use an enumerable method to return information about all of my_phone's applications.
 # 🏔 Stretch Goals
+
+my_phone.each do |something, value|
+    p "The apps on my phone are #{value}"
+end
+
 # As a developer, I can create a custom method that takes in my_phone and returns an array with the app name capitalized and information about each phone app.
+
+# create a method that takes in my_phone
+# returns an array with the app name capitalized
+
+def upper_cased apps
+    apps.map do |key, value|
+       value.capitalize
+    end
+end
+
+p upper_cased my_phone
+
 # As a developer, I can create a custom method that takes in my_phone and returns an array with a sentence about the name of each app
+
+#create a method that takes in the my_phone hash
+# using map method, return an array with a sentence on each app
+
+def about_my_apps info
+    info.map do |key, value|
+        "One of the apps on my phone is #{value}"
+    end
+end
+
+p about_my_apps my_phone
