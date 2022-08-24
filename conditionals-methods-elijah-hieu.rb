@@ -121,7 +121,10 @@ end
 # As a developer, you have been tasked with creating the user registration for a secure web site. To test your code, enter the user ID and password in the terminal to find out if they are acceptable. The user ID and password must adhere to the to following criteria:
 
 def password_checker(id, pass)
-    if id == pass || id.length < 6 || pass.length < 6 || pass.include?('!') ==  false|| pass.include?('#') == false || pass.include?('$')  == false || id.include?(' ') == true || id.include?('!') == true ||id.include?('#') == true || id.include?('$') == true || pass == "password" || pass.include?('0') == false ||pass.include?('1') == false ||pass.include?('2') == false ||pass.include?('3') == false ||pass.include?('4') == false ||pass.include?('5') == false ||pass.include?('6') == false ||pass.include?('7') == false ||pass.include?('8') == false ||pass.include?('9') == false 
+    if id == pass || id.length < 6 || pass.length < 6 ||  id.include?(' ') == true || id.include?('!') == true ||id.include?('#') == true || id.include?('$') == true || pass == "password" || pass.include?('0') == false ||pass.include?('1') == false ||pass.include?('2') == false ||pass.include?('3') == false ||pass.include?('4') == false ||pass.include?('5') == false ||pass.include?('6') == false ||pass.include?('7') == false ||pass.include?('8') == false ||pass.include?('9') == false 
+
+    # pass.include?('!') ==  false|| pass.include?('#') == false || pass.include?('$')  == false ||
+
         p 'not valid'
     else
         p 'valid'
