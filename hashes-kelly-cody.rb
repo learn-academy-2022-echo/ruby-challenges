@@ -54,7 +54,7 @@ p phone
 # As a developer, I can create a custom method that takes in my_phone and returns an array with the app name capitalized and information about each phone app.
 
 #Psuedocode:
-    # define a method 
+    # define a method
     # takes in my_phone as input
         # use .map to iterate through my_phone
         # create key and value parameters
@@ -72,3 +72,14 @@ p phone
     p phoneapps my_phone
 
 # As a developer, I can create a custom method that takes in my_phone and returns an array with a sentence about the name of each app.
+    # PSEUDOCODE:
+        # create a method named app_name
+
+        def app_name hash
+            newphone = hash.map do |key, value|
+               "#{key.capitalize} starts with #{key[0]}."
+            end
+            newphone
+        end
+
+        p app_name my_phone
