@@ -78,7 +78,40 @@ end
 largo_num largest_arr
 
 # Create a method that takes in an array of numbers and returns the smallest number in the array.
+
+def small_num array
+
+    smallest_num = array[0]
+    i = 1
+      while i < array.length
+        if smallest_num > array[i]
+            smallest_num = array[i]
+        end
+        i += 1
+    end
+    p smallest_num 
+end
+
+small_num largest_arr
+
 # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
+
+# create a method that takes in an array
+# use select method to filter out odd numbers
+# use sort from least to greatest
+# print out an array of odd numbers from least to largest.
+
+our_nums_array = [6, 13, 36, 64,4,9, 17, 23]
+def only_odds array
+    nums_odd = array.select do |num|
+        num.odd?
+    end
+    nums_odd = nums_odd.sort
+    p nums_odd
+end
+
+only_odds our_nums_array 
+
 # Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercased letters should be returned lowercased and all lowercased letters should be returned uppercased.
 # Create a method that takes in an array of words and returns all the words that start with a particular letter. Ex) Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango'].
 # FIZZBUZZ
