@@ -91,7 +91,6 @@ name_answer = gets.chomp
 
 puts "#{second_name} choose rock, paper, or scissors"
 second_name_answer = gets.chomp
-
     
 if name_answer  == 'rock' && second_name_answer == 'scissors'
 	puts "#{name} wins"
