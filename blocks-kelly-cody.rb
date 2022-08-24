@@ -131,8 +131,50 @@
         # p reverse_casing ['HelLo', 'woRLD']
 
 # Create a method that takes in an array of words and returns all the words that start with a particular letter. Ex) Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango'].
-        
+    # PSEUDOCODE:
+        # create method called starts_with
+        # takes in an array of words adn a letter of choice
+            # create a new variable for the select array
+            # use .select to iterate through the array
+            # look at index 0 of each value and check if it equals the letter
+            # use .upcase when checking the letters
+        # returns all the words that start with a particular letter
+
+    def starts_with array, letter
+        new_array = array.select do |value|
+            value[0].upcase == letter.upcase
+        end
+        new_array
+    end
+
+    p starts_with(['Apple', 'Avocado', 'Banana', 'Mango'], 'a')
 
 
 # FIZZBUZZ
 # Write a method that prints the numbers from 1 to 100. For multiples of three print Fizz instead of the number, for multiples of five print Buzz instead of the number, for numbers that are multiples of both three and five print FizzBuzz, for all other numbers print the number.
+    # PSEUDOCODE:
+        # def a method called fizzbuzz
+        # prints 1-100 using range
+        # iterate through the range with .each
+            # create conditional
+                # for multiples of three print Fizz instead of the number
+                # for multiples of five print Buzz instead of the number
+                # for numbers that are multiples of both three and five print FizzBuzz
+                # for all other numbers print the number
+
+    def fizzbuzz
+        num_range = 1..100
+        num_range.each do |num|
+            if (num % 3 == 0 && num % 5 == 0)
+                p 'fizzbuzz'
+            elsif num % 3 == 0
+                p 'fizz'
+            elsif num % 5 == 0
+                p 'buzz'
+            else
+                p num
+            end
+        end
+    end
+
+    fizzbuzz
