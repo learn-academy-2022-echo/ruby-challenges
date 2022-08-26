@@ -91,12 +91,33 @@ yellow.set_color('red', 'green', 'magenta')
 yellow.all_colors
 # Animal Kingdom
 # As a developer, I can make an Animal (generic Animal class).
-# As a developer, upon initialization, I can give my Animal a status of alive, which will be set to true.
-# As a developer, I can give my Animal an age of 0 upon creation.
-# As a developer, I can age my Animal up one year at a time.
-# As a developer, I can return my Animal's age, as well as if they're alive.
+
+class Animal
+    attr_accessor :age, :alive
+
+    def initialize(alive_param = 'true', age_param = 0)
+        @alive = alive_param
+        @age = age_param
+    end
+    def age_up
+        age += 1
+    end
+end
+
+p eagle = Animal.new
+p eagle.age
+p eagle.alive
+
+# As a developer, upon initialization, I can give my Animal a status of alive, which will be set to true.✅
+# As a developer, I can give my Animal an age of 0 upon creation.✅
+# As a developer, I can age my Animal up one year at a time.✅
+# As a developer, I can return my Animal's age, as well as if they're alive. ✅
 # Hint: Use attr_accessor as well as an initialize method.
 # As a developer, I can create a Fish that inherits from Animal.
+class Fish 
+    def initialize(Animal)
+    end
+end
 # As a developer, I can initialize all of my fish to be cold_blooded. (Yes, there is one fish who is technically fully warm-blooded but we aren't going to talk about that.)
 # As a developer, I can create a Salmon that inherits from Fish.
 # As a developer, I can initialize my Salmon to be a specific species (Atlantic, Sockeye, etc).
