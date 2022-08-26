@@ -48,11 +48,47 @@ p task_one
 #######################################
 # For the following ColorPalette challenge use initialize and attr_accessor methods in your class
 # As a developer, I can create a class called ColorPalette.
+class ColorPalette 
+   attr_accessor :color_1, :color_2, :color_3
+
+   
+    def initialize
+        @color_1 = 'red'
+        @color_2 = 'white'
+        @color_3 = 'blue'
+    end
+    def set_color (color_1, color_2, color_3)
+        @color_1 = color_1
+        @color_2 = color_2
+        @color_3 = color_3
+    end
+    def get_color
+        @color_1
+        @color_2
+        @color_3
+    end
+    def all_colors
+        p "the colors of the flag of the US are #{color_1}, #{color_2},and #{color_3}"
+    end
+    
+end
 # As a developer, I can create three instances (objects) of class ColorPalette. (e.g green = ColorPalette.new)
+# yellow= ColorPalette.new
+# blue = ColorPalette.new
+# red = ColorPalette.new
 # As a developer, I can initialize each inistance of the class ColorPalette with three colors. (e.g. green = ColorPalette.new('Chartreuse', 'Kelly', 'Seafoam'))
+p yellow = ColorPalette.new
+p green = ColorPalette.new
+p purple = ColorPalette.new
 # As a developer, I can print the value of each individual color.
+p yellow.color_1
+p green.color_2
+p purple.color_3
 # As a developer, I can create a method called all_colors that when called will print a sentence telling me the three colors of a given palette.
+yellow.all_colors
 # As a developer, I can change one or more colors of a given palette.
+yellow.set_color('red', 'green', 'magenta')
+yellow.all_colors
 # Animal Kingdom
 # As a developer, I can make an Animal (generic Animal class).
 # As a developer, upon initialization, I can give my Animal a status of alive, which will be set to true.
