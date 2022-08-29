@@ -8,10 +8,11 @@
 
 
 class Animal 
-    def initialize species_name
+    attr_accessor :name, :age, :alive
+    def initialize name
         @alive = true
         @age = 0
-        @species = species_name
+        @name = name
     end 
     def is_older 
         @age = @age + 1
@@ -23,20 +24,23 @@ end
 # As a developer, I can create a Fish that inherits from Animal.
 # As a developer, I can initialize all of my fish to be cold_blooded. (Yes, there is one fish who is technically fully warm-blooded but we aren't going to talk about that.)
 
-class Fish < Animal
-    def initialize species_name
-        super(species_name)
+class Fish < Animal 
+    attr_accessor :cold_blooded
+    def initialize name
+        super(name)
         @cold_blooded = true
     end
 end
 
 class Salmon < Fish 
-    def initialize species_name
-        super(species_name)
+    attr_accessor :species
+    def initialize name, species
+        super(name)
+        @species = species
     end
 end
 
-p my_fish = Salmon.new("Atlantic")
+p my_fish = Salmon.new("Charles", "Atlantic")
 # output: #<Salmon:0x00007f900d0162e8 @alive=true, @age=0, @species="Atlantic", @cold_blooded=true>
 
 # As a developer, I can create a Salmon that inherits from Fish.
