@@ -15,7 +15,7 @@
 
 class Animal
     attr_accessor :is_alive, :age
-    def initialize
+    def initialize 
         @is_alive = true
         @age = 0
     end
@@ -33,8 +33,9 @@ end
 class Fish < Animal
     attr_accessor :cold_blooded, :species
     def initialize species
-        super
         @cold_blooded = true
+        @species = species
+        super()
     end
     def species
         p "cold blooded? #{cold_blooded}, species #{species}"
