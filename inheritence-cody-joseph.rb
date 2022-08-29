@@ -20,7 +20,9 @@
 # As a developer, I can see a message that tells me all of my Bear's information.
 # As a developer, if my Bear turns 20 years old, I can make it die peacefully after a full and happy life.
 # Hint: You will need a method that changes the status of alive in the initialize method of Animal.
-# As a developer, I can create a Mammal of my choice.
+
+
+#As a developer, I can create a Mammal of my choice.
 # As a developer, I can interact with the new Mammal via various methods.
 # As a developer, I can see a message that tells me all of my new Mammal's information.
 # STRETCH: As a developer, I can keep a collection of two of each Animal.
