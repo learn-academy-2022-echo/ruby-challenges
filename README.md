@@ -34,7 +34,7 @@ From the full TV show array, add your top two favorite shows to the empty array
 
 
 
-This repository holds the Ruby pair programming challenges for the 2022 Delta cohort.
+This repository holds the Ruby pair programming challenges for the 2022 Echo cohort.
 
 ### Process Notes
 - Anything wrapped in `< >` is an indication that this will be named uniquely, the `< >` are NOT actually added to the command
