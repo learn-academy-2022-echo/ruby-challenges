@@ -156,3 +156,21 @@ rpc
 # User ID cannot contain the following characters: !#$ or spaces
 # Password cannot be the word "password".
 # User password must contain at least one number.
+
+p 'Type in a username'
+user_id = gets.chomp
+p 'Type in a password'
+password = gets.chomp
+
+def checker
+    if user_id == password
+        p 'Username and password cannot be the same try again'
+    elsif user_name.length < 6  
+        p 'UserName Too Short Try Again'
+    elsif  password.length < 6
+        p 'Password Is Too Short Try Again'
+    elsif password.exclude?('!', '#', '$') 
+        p 'Try again.  Make sure to include one of the following: !, #, $'
+    elsif user_name.include?('!', '#', '$')
+        p 'Username can not conatin: !, #, $. Try again.'
+    elsif password.include?()
