@@ -15,7 +15,12 @@
 
 class Animal
     attr_accessor :is_alive, :age
+<<<<<<< HEAD
     def initialize 
+=======
+    def initialize
+        
+>>>>>>> 6154651e1df7f25201b931ff739620d823b16082
         @is_alive = true
         @age = 0
     end
@@ -33,6 +38,7 @@ end
 class Fish < Animal
     attr_accessor :cold_blooded, :species
     def initialize species
+<<<<<<< HEAD
         @cold_blooded = true
         @species = species
         super()
@@ -40,6 +46,11 @@ class Fish < Animal
     def species
         p "cold blooded? #{cold_blooded}, species #{species}"
 
+=======
+        super()
+        @cold_blooded = true
+        @species = species
+>>>>>>> 6154651e1df7f25201b931ff739620d823b16082
     end
 end
 # As a developer, I can initialize my Salmon to be a specific species (Atlantic, Sockeye, etc).
