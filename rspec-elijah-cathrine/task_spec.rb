@@ -17,6 +17,7 @@ describe 'Task' do
         expect(to_do_list.title).to eq 'My To-Do-List'
     end
 # Story: As a developer, I can give a Task a description and retrieve it.
+
     it 'has a description' do
         purpose = Task.new
         purpose.description = 'This is my errands for the weekend'
