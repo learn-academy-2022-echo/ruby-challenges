@@ -52,7 +52,7 @@ p arrayLowerCase
 
 
 # Create a method that takes in an array of numbers and returns the largest number in the array.
-
+# create method 
 # create an array with numbers
 # select over the array
 # .max to find largest num
@@ -60,7 +60,8 @@ p arrayLowerCase
 
 arraynum = [30,10,2,400,2]
 
-arraynum = arraynum.max 
+def largestNum number
+    
 
 
 p arraynum
