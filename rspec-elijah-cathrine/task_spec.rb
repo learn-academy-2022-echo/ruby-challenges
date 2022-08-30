@@ -45,4 +45,3 @@ end
 # Story: As a developer with a TaskList, I can print the completed items.
 
 # Story: As a developer with a TaskList, I can print the incomplete items.
-
