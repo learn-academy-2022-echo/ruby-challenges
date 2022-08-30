@@ -17,3 +17,4 @@ class Task
         @newtasklist << list       
     end
 end
+
